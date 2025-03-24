@@ -5,4 +5,10 @@
 .vscode
 
 # testes
-/testes
+/src/testes
+
+# Arquivos .txt
+*.txt
+
+# Arquivos de backup
+/backup
