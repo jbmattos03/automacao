@@ -15,8 +15,8 @@ if (-not (Test-Path -Path $DestinationPath)) {
 # Criar arquivo de backup
 try {
     Compress-Archive -Path $path -CompressionLevel Fastest -DestinationPath "$DestinationPath/backup_$date.zip"
-    Write-Output "Backup criado com sucesso no caminho $("./backup" + $date + ".zip")"
+    Write-Output "Backup criado com sucesso no caminho $DestinationPath/backup_$date.zip"
 } catch {
-    Write-Output "Erro ao criar backup no caminho ./backup/backup_$date"
+    Write-Output "Erro ao criar backup no caminho $DestinationPath/backup_$date.zip"
     Write-Output $_.Exception.Message
 }
