@@ -21,7 +21,7 @@ Certifique-se de que tem a CLI do Ookla Speedtest antes de rodá-lo.
 1. Windows
 
 ```
-winget install --id=Ookla.Speedtest.Desktop -e
+winget install --id=Ookla.Speedtest.CLI -e
 ```
 
 2. MacOS, Ubuntu/Debian, Fedora/Centos/RedHat e FreeBSD
