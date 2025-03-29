@@ -8,7 +8,7 @@ Param(
 $date = Get-Date -Format "dd-MM-yyyy"
 
 # Criar uma pasta de backup
-if (-not (Test-Path -Path $DestinationPath)) {
+if (-not (Test-Path -Path $DestinationPath)) { # Testar se pasta já existe
     New-Item -Path $DestinationPath -ItemType Directory
 }
 
