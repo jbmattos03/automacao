@@ -5,7 +5,7 @@
 .vscode
 
 # testes
-/src/testes
+/src/scripts/testes
 
 # Arquivos .txt
 *.txt
