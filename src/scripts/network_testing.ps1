@@ -84,7 +84,7 @@ try {
 # Atenção: Instalar CLI do Speedtest da Ookla antes de rodar
 try {
     Write-Output "Testando velocidade da conexão..."
-    #speedtest
+    speedtest
 } catch {
     Write-Output "Erro ao rodar Ookla Speedtest: $($_.Exception.Message)" 
 }
