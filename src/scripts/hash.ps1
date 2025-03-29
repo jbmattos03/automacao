@@ -6,11 +6,11 @@ Param(
 
 # Computar hash do arquivo
 try {
-    If ($Algorithm) {
+    if ($Algorithm) {
         $Hash = Get-FileHash -Path $Path -Algorithm $Algorithm | Format-List
         Write-Output $Hash
     }
-    Else {
+    else {
         $Hash = Get-FileHash -Path $Path | Format-List
         Write-Output $Hash
     }
