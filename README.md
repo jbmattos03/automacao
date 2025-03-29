@@ -23,6 +23,7 @@ winget --id=Ookla.Speedtest.Desktop -e
 ```
 
 2. MacOS, Ubuntu/Debian, Fedora/Centos/RedHat e FreeBSD
+
 Refira-se aos comandos de instalação ou baixar o binário de [link oficial](https://www.speedtest.net/pt/apps/cli)
 
 3. Arch Linux
@@ -48,6 +49,8 @@ yay -S ookla-speedtest-bin
 ./network_testing.ps1 [[-Domain] <string[]>]
 ```
 
+/
+
 ### network_info.ps1
 Imprime informações de rede:
 1. Informações do adaptador de rede
@@ -58,6 +61,8 @@ Imprime informações de rede:
 ```
 ./network_info.ps1
 ```
+
+/
 
 ### backup.ps1
 Cria arquivo .zip de backup de um diretório especificado e o armazena em um caminho especificado.
@@ -77,6 +82,8 @@ pwd
 ./backup.ps1 [[-Path] <System.IO.DirectoryInfo[]>] [[-DestinationPath] <System.IO.DirectoryInfo[]>]
 ```
 
+/
+
 ### hash.ps1
 Computa um valor hash para um arquivo especificado utilizando um algoritmo especificado (padrão: SHA256).
 
@@ -85,6 +92,8 @@ Computa um valor hash para um arquivo especificado utilizando um algoritmo espec
 ```
 ./hash.ps1 [[-Path] <System.IO.DirectoryInfo[]>] [[-Algorithm] <string[]>]
 ```
+
+/
 
 ### file_util.ps1
 Cria, move/renomeia ou remove arquivos ou diretórios em um caminho especificado.
