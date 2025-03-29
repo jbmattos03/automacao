@@ -26,7 +26,7 @@ winget --id=Ookla.Speedtest.Desktop -e
 
 2. MacOS, Ubuntu/Debian, Fedora/Centos/RedHat e FreeBSD
 
-Refira-se aos comandos de instalação ou baixar o binário de [link oficial](https://www.speedtest.net/pt/apps/cli)
+<space><space>Refira-se aos comandos de instalação ou baixar o binário de [link oficial](https://www.speedtest.net/pt/apps/cli)
 
 3. Arch Linux
 Primeiro, instale o yay:
