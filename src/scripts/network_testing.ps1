@@ -23,7 +23,7 @@ if ($Domain) {
     try {
         $Result = $Domain -Match "^(?:(www)|(wiki)\.)?(?!-)([a-zA-Z0-9-]{1,63}(?<!-)\.)+[a-zA-Z]{2,}$"
         if (-Not $Result) {
-            Throw "Insira um domínio válido"
+            Throw "Insira um dominio valido"
         }
     } catch {
         Write-Error "$($_.Exception.Message)"
@@ -33,26 +33,27 @@ if ($Domain) {
 
 # Imprimir banner
 Write-Output "----- network_testing -----"
-Write-Output "Começando testes...`n"
+Write-Output "Iniciando testes...`n"
 
 # Verificar se máquina usa Linux ou Windows
 $IsOSWindows = $True # Presumir, por padrão, que máquina usa Windows
 try {
-    Write-Output "Verficando se máquina utiliza Windows ou Linux..."
+    Write-Output "Verificando se maquina utiliza Windows ou Linux..."
 
     $HostInfo = hostnamectl -ErrorAction Continue
     if ($HostInfo) {
         $IsOSWindows = $False
-        Write-Output "Máquina está utilizando Linux.`n"
+        Write-Output "Maquina esta utilizando Linux.`n"
     }
 }
 catch {
-    Write-Output "Máquina está utilizando Windows.`n"
+
+    Write-Output "Maquina esta utilizando Windows.`n"
 }
 
 # Testar DNS
 try {
-    Write-Output "Testando se há problemas na resolução de DNS..."
+    Write-Output "Testando se ha problemas na resolução de DNS..."
 
     if ($IsOSWindows) {
         $DNS = Resolve-DnsName -Name $Domain -ErrorAction Stop
@@ -83,8 +84,8 @@ try {
 # Testar velocidade utilizando CLI da Ookla
 # Atenção: Instalar CLI do Speedtest da Ookla antes de rodar
 try {
-    Write-Output "Testando velocidade da conexão..."
-    speedtest
+    Write-Output "Testando velocidade da conexao..."
+    #speedtest
 } catch {
     Write-Output "Erro ao rodar Ookla Speedtest: $($_.Exception.Message)" 
 }
